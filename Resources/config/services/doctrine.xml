@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services
+        http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service class="Miky\Bundle\CommercialBundle\Doctrine\BenefitManager" id="miky_commercial.benefit_manager">
+            <argument id="doctrine.orm.entity_manager" type="service"/>
+            <argument>%miky_commercial.model.benefit.class%</argument>
+        </service>
+        <service class="Miky\Bundle\CommercialBundle\Doctrine\CommercialActionManager" id="miky_commercial.commercial_action_manager">
+            <argument id="doctrine.orm.entity_manager" type="service"/>
+            <argument>%miky_commercial.model.commercial_action.class%</argument>
+        </service>
+        <service class="Miky\Bundle\CommercialBundle\Doctrine\CompanySheetManager" id="miky_commercial.company_sheet_manager">
+            <argument id="doctrine.orm.entity_manager" type="service"/>
+            <argument>%miky_commercial.model.company_sheet.class%</argument>
+        </service>
+        <service class="Miky\Bundle\CommercialBundle\Doctrine\ContactSheetManager" id="miky_commercial.contact_sheet_manager">
+            <argument id="doctrine.orm.entity_manager" type="service"/>
+            <argument>%miky_commercial.model.contact_sheet.class%</argument>
+        </service>
+        <service class="Miky\Bundle\CommercialBundle\Doctrine\QuotationManager" id="miky_commercial.quotation_manager">
+            <argument id="doctrine.orm.entity_manager" type="service"/>
+            <argument>%miky_commercial.model.quotation.class%</argument>
+        </service>
+        <service class="Miky\Bundle\CommercialBundle\Doctrine\QuotationItemManager" id="miky_commercial.quotation_item_manager">
+            <argument id="doctrine.orm.entity_manager" type="service"/>
+            <argument>%miky_commercial.model.quotation_item.class%</argument>
+        </service>
+    </services>
+</container>

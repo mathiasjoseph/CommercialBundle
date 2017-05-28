@@ -13,4 +13,7 @@
         </service>
     </services>
     -->
+    <imports>
+        <import resource="services/doctrine.xml"/>
+    </imports>
 </container>

@@ -19,6 +19,15 @@ class Configuration implements ConfigurationInterface
     {
         $treeBuilder = new TreeBuilder();
         $rootNode = $treeBuilder->root('miky_commercial');
+        $rootNode
+            ->children()
+            ->scalarNode('benefit_class')->isRequired()->cannotBeEmpty()->end()
+            ->scalarNode('commercial_action_class')->isRequired()->cannotBeEmpty()->end()
+            ->scalarNode('company_sheet_class')->isRequired()->cannotBeEmpty()->end()
+            ->scalarNode('contact_sheet_class')->isRequired()->cannotBeEmpty()->end()
+            ->scalarNode('quotation_class')->isRequired()->cannotBeEmpty()->end()
+            ->scalarNode('quotation_item_class')->isRequired()->cannotBeEmpty()->end()
+            ->end();
 
 
         // Here you should define the parameters that are allowed to

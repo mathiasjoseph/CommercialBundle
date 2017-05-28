@@ -2,8 +2,8 @@
 /**
  * Created by PhpStorm.
  * User: miky
- * Date: 11/05/17
- * Time: 22:09
+ * Date: 01/12/16
+ * Time: 10:43
  */
 
 namespace Miky\Bundle\CommercialBundle\Model;
@@ -11,8 +11,9 @@ namespace Miky\Bundle\CommercialBundle\Model;
 
 
 use Miky\Component\Resource\Model\ResourceInterface;
+use Miky\Component\Commercial\Model\CompanySheet as BaseCompanySheet;
 
-class CommercialAction extends \Miky\Component\Commercial\Model\CommercialAction implements ResourceInterface
+class CompanySheet extends BaseCompanySheet implements ResourceInterface
 {
     /**
      * @var mixed

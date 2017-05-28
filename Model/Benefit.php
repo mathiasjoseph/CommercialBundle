@@ -1,18 +1,18 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: miky
- * Date: 11/05/17
- * Time: 22:09
+ * User: root
+ * Date: 24/05/17
+ * Time: 21:55
  */
 
 namespace Miky\Bundle\CommercialBundle\Model;
 
 
-
 use Miky\Component\Resource\Model\ResourceInterface;
+use Miky\Component\Commercial\Model\Benefit as BaseBenefit;
 
-class CommercialAction extends \Miky\Component\Commercial\Model\CommercialAction implements ResourceInterface
+class Benefit extends BaseBenefit implements ResourceInterface
 {
     /**
      * @var mixed
