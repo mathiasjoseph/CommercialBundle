@@ -7,27 +7,27 @@
 
     <services>
         <service id="miky_commercial.form.type.benefit" class="Miky\Bundle\CommercialBundle\Form\Type\BenefitFormType">
-            <argument>%miky.model.benefit.class%</argument>
+            <argument>%miky_commercial.model.benefit.class%</argument>
             <tag name="form.type" alias="miky_commercial_benefit"/>
         </service>
         <service id="miky_commercial.form.type.commercial_action" class="Miky\Bundle\CommercialBundle\Form\Type\CommercialActionFormType">
-            <argument>%miky.model.commercial_action.class%</argument>
+            <argument>%miky_commercial.model.commercial_action.class%</argument>
             <tag name="form.type" alias="miky_commercial_commercial_action"/>
         </service>
         <service id="miky_commercial.form.type.company_sheet" class="Miky\Bundle\CommercialBundle\Form\Type\CompanySheetFormType">
-            <argument>%miky.model.company_sheet.class%</argument>
+            <argument>%miky_commercial.model.company_sheet.class%</argument>
             <tag name="form.type" alias="miky_commercial_company_sheet"/>
         </service>
         <service id="miky_commercial.form.type.contact_sheet" class="Miky\Bundle\CommercialBundle\Form\Type\ContactSheetFormType">
-            <argument>%miky.model.contact_sheet.class%</argument>
+            <argument>%miky_commercial.model.contact_sheet.class%</argument>
             <tag name="form.type" alias="miky_commercial_contact_sheet"/>
         </service>
         <service id="miky_commercial.form.type.quotation" class="Miky\Bundle\CommercialBundle\Form\Type\QuotationFormType">
-            <argument>%miky.model.quotation.class%</argument>
+            <argument>%miky_commercial.model.quotation.class%</argument>
             <tag name="form.type" alias="miky_commercial_quotation"/>
         </service>
         <service id="miky_commercial.form.type.quotation_item" class="Miky\Bundle\CommercialBundle\Form\Type\QuotationItemFormType">
-            <argument>%miky.model.quotation_item.class%</argument>
+            <argument>%miky_commercial.model.quotation_item.class%</argument>
             <tag name="form.type" alias="miky_commercial_quotation_item"/>
         </service>
     </services>
