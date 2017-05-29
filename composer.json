@@ -25,9 +25,9 @@
     "symfony/swiftmailer-bundle": "~2.3,>=2.3.10",
     "symfony/symfony": "2.8.*",
     "twig/twig": "^2.0",
-    "mikycorp/corebundle": "^0.0.1",
-    "mikycorp/userbundle": "^0.0.1",
-    "mikycorp/locationbundle": "^0.0.1"
+    "mikycorp/corebundle": "~1.0,
+    "mikycorp/userbundle": "~1.0",
+    "mikycorp/locationbundle": "~1.0"
   },
   "autoload" : {
     "psr-0" : {
