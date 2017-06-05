@@ -6,9 +6,7 @@
 
     <mapped-superclass name="Miky\Bundle\CommercialBundle\Model\ProspectSheet">
 
-        <field name="name" type="string" length="180" />
-        <field name="dateTo" type="datetime"/>
-        <field name="dateFrom" type="datetime"/>
+
 
     </mapped-superclass>
 

@@ -32,8 +32,14 @@ class CommercialMenuSubscriber implements EventSubscriberInterface
             ->setLabelAttribute('icon', 'users')
         ;
         $commercialSubMenu
-            ->addChild('formations_list', array("route" => "gaia_formation_admin_formation_index" ))
-            ->setLabel('formations')
+            ->addChild('contact_sheet_list', array("route" => "miky_commercial_admin_contact_sheet_index" ))
+            ->setLabel('miky_commercial.contact_sheets')
+            ->setLabelAttribute('icon', 'users')
+        ;
+
+        $commercialSubMenu
+            ->addChild('company_sheet_list', array("route" => "miky_commercial_admin_company_sheet_index" ))
+            ->setLabel('miky_commercial.company_sheets')
             ->setLabelAttribute('icon', 'users')
         ;
 
