@@ -6,8 +6,6 @@
 
     <mapped-superclass name="Miky\Bundle\CommercialBundle\Model\CompanySheet">
 
-
-
     </mapped-superclass>
 
 </doctrine-mapping>
