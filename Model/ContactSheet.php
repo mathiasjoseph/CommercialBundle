@@ -9,8 +9,8 @@
 namespace Miky\Bundle\CommercialBundle\Model;
 
 
-use Miky\Component\Resource\Model\ResourceInterface;
 use Miky\Component\Commercial\Model\ContactSheet as BaseContactSheet;
+use Miky\Component\Resource\Model\ResourceInterface;
 
 class ContactSheet extends BaseContactSheet implements ResourceInterface
 {

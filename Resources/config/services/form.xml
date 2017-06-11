@@ -4,31 +4,30 @@
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
-
     <services>
-        <service id="miky_commercial.form.type.benefit" class="Miky\Bundle\CommercialBundle\Form\Type\BenefitFormType">
+        <service class="Miky\Bundle\CommercialBundle\Form\Type\Admin\BenefitAdminType">
             <argument>%miky_commercial.model.benefit.class%</argument>
-            <tag name="form.type" alias="miky_commercial_benefit"/>
+            <tag name="form.type"/>
         </service>
-        <service id="miky_commercial.form.type.commercial_action" class="Miky\Bundle\CommercialBundle\Form\Type\CommercialActionFormType">
+        <service class="Miky\Bundle\CommercialBundle\Form\Type\Admin\CommercialActionAdminType">
             <argument>%miky_commercial.model.commercial_action.class%</argument>
-            <tag name="form.type" alias="miky_commercial_commercial_action"/>
+            <tag name="form.type"/>
         </service>
-        <service id="miky_commercial.form.type.company_sheet" class="Miky\Bundle\CommercialBundle\Form\Type\CompanySheetFormType">
+        <service class="Miky\Bundle\CommercialBundle\Form\Type\Admin\CompanySheetAdminType">
             <argument>%miky_commercial.model.company_sheet.class%</argument>
-            <tag name="form.type" alias="miky_commercial_company_sheet"/>
+            <tag name="form.type"/>
         </service>
-        <service id="miky_commercial.form.type.contact_sheet" class="Miky\Bundle\CommercialBundle\Form\Type\ContactSheetFormType">
+        <service class="Miky\Bundle\CommercialBundle\Form\Type\Admin\ContactSheetAdminType">
             <argument>%miky_commercial.model.contact_sheet.class%</argument>
-            <tag name="form.type" alias="miky_commercial_contact_sheet"/>
+            <tag name="form.type"/>
         </service>
-        <service id="miky_commercial.form.type.quotation" class="Miky\Bundle\CommercialBundle\Form\Type\QuotationFormType">
+        <service class="Miky\Bundle\CommercialBundle\Form\Type\Admin\QuotationAdminType">
             <argument>%miky_commercial.model.quotation.class%</argument>
-            <tag name="form.type" alias="miky_commercial_quotation"/>
+            <tag name="form.type"/>
         </service>
-        <service id="miky_commercial.form.type.quotation_item" class="Miky\Bundle\CommercialBundle\Form\Type\QuotationItemFormType">
+        <service class="Miky\Bundle\CommercialBundle\Form\Type\Admin\QuotationItemAdminType">
             <argument>%miky_commercial.model.quotation_item.class%</argument>
-            <tag name="form.type" alias="miky_commercial_quotation_item"/>
+            <tag name="form.type"/>
         </service>
     </services>
 

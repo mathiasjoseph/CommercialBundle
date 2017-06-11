@@ -2,3 +2,7 @@ miky_commercial:
     commercial: Commercial
     contact_sheets: Fiches contact
     company_sheets: Fiches entreprise
+    contact_sheet.new: Créer une fiche contact
+    contact_sheet.edit: Modifier la fiche contact
+    contact_sheets.manage: Gérer les fiches contact
+    company_sheets.manage: Gérer les fiches entreprise

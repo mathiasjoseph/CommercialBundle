@@ -5,14 +5,12 @@ miky_commercial.admin.contact_sheet:
         context: admin
         templates: MikyAdminBundle:Crud
         redirect: update
-        grid: miky_user.admin.user
-        form: miky_user_admin
+        grid: miky_commercial.admin.contact_sheet
+        form: Miky\Bundle\CommercialBundle\Form\Type\Admin\ContactSheetAdminType
         permission: true
         vars:
             all:
-                subheader: miky_user.manage_users
-                templates:
-                    #form: MikyAdminBundle:Product:_form.html.twig
+                subheader: miky_commercial.contact_sheets.manage
             index:
                 icon: cube
     type: miky.resource_admin
@@ -24,14 +22,12 @@ miky_commercial.admin.company_sheet:
         context: admin
         templates: MikyAdminBundle:Crud
         redirect: update
-        grid: miky_user.admin.user
-        form: miky_user_admin
+        grid: miky_commercial.admin.contact_sheet
+        form: Miky\Bundle\CommercialBundle\Form\Type\Admin\CompanySheetAdminType
         permission: true
         vars:
             all:
-                subheader: miky_user.manage_users
-                templates:
-                    #form: MikyAdminBundle:Product:_form.html.twig
+                subheader: miky_commercial.company_sheets.manage
             index:
                 icon: cube
     type: miky.resource_admin

@@ -10,8 +10,8 @@ namespace Miky\Bundle\CommercialBundle\Model;
 
 
 
-use Miky\Component\Resource\Model\ResourceInterface;
 use Miky\Component\Commercial\Model\CompanySheet as BaseCompanySheet;
+use Miky\Component\Resource\Model\ResourceInterface;
 
 class CompanySheet extends BaseCompanySheet implements ResourceInterface
 {

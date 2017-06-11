@@ -9,8 +9,8 @@
 namespace Miky\Bundle\CommercialBundle\Model;
 
 
-use Miky\Component\Resource\Model\ResourceInterface;
 use Miky\Component\Commercial\Model\Benefit as BaseBenefit;
+use Miky\Component\Resource\Model\ResourceInterface;
 
 class Benefit extends BaseBenefit implements ResourceInterface
 {
