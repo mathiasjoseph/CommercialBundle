@@ -5,6 +5,10 @@
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
+        <service id="Miky\Bundle\CommercialBundle\Form\Type\ContactSheetEntityType">
+            <argument>%miky_commercial.model.contact_sheet.class%</argument>
+            <tag name="form.type"/>
+        </service>
         <service class="Miky\Bundle\CommercialBundle\Form\Type\Admin\BenefitAdminType">
             <argument>%miky_commercial.model.benefit.class%</argument>
             <tag name="form.type"/>
