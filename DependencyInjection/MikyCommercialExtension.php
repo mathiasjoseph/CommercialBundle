@@ -30,6 +30,8 @@ class MikyCommercialExtension extends AbstractCoreExtension implements PrependEx
             '' => array(
                 'benefit_class' => 'miky_commercial.model.benefit.class',
                 'commercial_action_class' => 'miky_commercial.model.commercial_action.class',
+                'commercial_action_worker_class' => 'miky_commercial.model.commercial_action_worker.class',
+                'commercial_action_contact_class' => 'miky_commercial.model.commercial_action_contact.class',
                 'company_sheet_class' => 'miky_commercial.model.company_sheet.class',
                 'contact_sheet_class' => 'miky_commercial.model.contact_sheet.class',
                 'quotation_class' => 'miky_commercial.model.quotation.class',

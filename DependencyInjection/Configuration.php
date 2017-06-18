@@ -23,6 +23,8 @@ class Configuration implements ConfigurationInterface
             ->children()
             ->scalarNode('benefit_class')->isRequired()->cannotBeEmpty()->end()
             ->scalarNode('commercial_action_class')->isRequired()->cannotBeEmpty()->end()
+            ->scalarNode('commercial_action_worker_class')->isRequired()->cannotBeEmpty()->end()
+            ->scalarNode('commercial_action_contact_class')->isRequired()->cannotBeEmpty()->end()
             ->scalarNode('company_sheet_class')->isRequired()->cannotBeEmpty()->end()
             ->scalarNode('contact_sheet_class')->isRequired()->cannotBeEmpty()->end()
             ->scalarNode('quotation_class')->isRequired()->cannotBeEmpty()->end()

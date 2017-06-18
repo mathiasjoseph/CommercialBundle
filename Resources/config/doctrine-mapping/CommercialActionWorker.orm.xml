@@ -4,12 +4,8 @@
                   xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
                   http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
 
-    <mapped-superclass name="Miky\Bundle\CommercialBundle\Model\CommercialAction">
-        <field name="title" type="string" length="180"/>
-        <field name="report" type="text"/>
-        <field name="actionDate" type="datetime" />
-        <field name="dunningDate" type="datetime" />
-        <field name="priority" type="integer"/>
+    <mapped-superclass name="Miky\Bundle\CommercialBundle\Model\CommercialActionWorker">
+        <field name="type" type="string" length="180"/>
     </mapped-superclass>
 
 </doctrine-mapping>

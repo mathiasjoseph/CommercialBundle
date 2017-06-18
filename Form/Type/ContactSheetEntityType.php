@@ -10,8 +10,6 @@ namespace Miky\Bundle\CommercialBundle\Form\Type;
 
 
 use Miky\Bundle\CommercialBundle\Model\ContactSheet;
-use Miky\Bundle\UserBundle\Model\User;
-use Miky\Component\User\Model\UserInterface;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\OptionsResolver\OptionsResolver;

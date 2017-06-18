@@ -5,6 +5,31 @@
         http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
+
+        <service class="Miky\Bundle\CommercialBundle\Doctrine\EventListener\CommercialActionContactSubscriber"
+                 id="miky_commercial.doctrine.commercial_action_contact_subscriber">
+            <argument type="string">%miky_user.model.user.class%</argument>
+            <argument type="string">%miky_user.model.employee.class%</argument>
+            <argument type="string">%miky_commercial.model.contact_sheet.class%</argument>
+            <argument type="string">%miky_commercial.model.commercial_action.class%</argument>
+            <tag name="doctrine.event_subscriber"/>
+        </service>
+        <service class="Miky\Bundle\CommercialBundle\Doctrine\EventListener\CommercialActionWorkerSubscriber"
+                 id="miky_commercial.doctrine.commercial_action_worker_subscriber">
+            <argument type="string">%miky_user.model.user.class%</argument>
+            <argument type="string">%miky_user.model.employee.class%</argument>
+            <argument type="string">%miky_commercial.model.contact_sheet.class%</argument>
+            <argument type="string">%miky_commercial.model.commercial_action.class%</argument>
+            <tag name="doctrine.event_subscriber"/>
+        </service>
+        <service class="Miky\Bundle\CommercialBundle\Doctrine\EventListener\CommercialActionSubscriber"
+                 id="miky_commercial.doctrine.commercial_action_subscriber">
+            <argument type="string">%miky_commercial.model.commercial_action_contact.class%</argument>
+            <argument type="string">%miky_commercial.model.commercial_action_worker.class%</argument>
+            <tag name="doctrine.event_subscriber"/>
+        </service>
+
+
         <service class="Miky\Bundle\CommercialBundle\Doctrine\BenefitManager" id="miky_commercial.benefit_manager">
             <argument id="doctrine.orm.entity_manager" type="service"/>
             <argument>%miky_commercial.model.benefit.class%</argument>

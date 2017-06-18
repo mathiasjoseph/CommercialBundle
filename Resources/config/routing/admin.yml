@@ -22,7 +22,7 @@ miky_commercial.admin.company_sheet:
         context: admin
         templates: MikyAdminBundle:Crud
         redirect: update
-        grid: miky_commercial.admin.contact_sheet
+        grid: miky_commercial.admin.company_sheet
         form: Miky\Bundle\CommercialBundle\Form\Type\Admin\CompanySheetAdminType
         permission: true
         vars:
@@ -31,3 +31,34 @@ miky_commercial.admin.company_sheet:
             index:
                 icon: cube
     type: miky.resource_admin
+
+
+miky_commercial.admin.commercial_action:
+    resource: |
+        alias: miky_commercial.commercial_action
+        section: admin
+        context: admin
+        templates: MikyAdminBundle:Crud
+        redirect: update
+        grid: miky_commercial.admin.commercial_action
+        form: Miky\Bundle\CommercialBundle\Form\Type\Admin\CommercialActionAdminType
+        permission: true
+        vars:
+            all:
+                subheader: miky_commercial.commercial_actions.manage
+            index:
+                icon: cube
+    type: miky.resource_admin
+
+
+
+miky_commercial.admin.commercial_action_timeline:
+    path: /%miky_admin.admin_path%/timeline
+    methods: [GET]
+    defaults:
+        _controller: miky_commercial.controller.admin.commercial_action:timelineAction
+        _seestock:
+            alias: miky_commercial.commercial_action
+            section: admin
+            template: SeestockAdminBundle:Crud:index.html.twig
+            type: seestock.resource

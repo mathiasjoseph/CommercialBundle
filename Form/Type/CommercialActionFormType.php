@@ -36,9 +36,6 @@ class CommercialActionFormType  extends AbstractType
         ));
     }
 
-    public function getName()
-    {
-        return "miky_commercial_commercial_action";
-    }
+
 
 }

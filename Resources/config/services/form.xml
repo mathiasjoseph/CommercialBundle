@@ -25,6 +25,18 @@
             <argument>%miky_commercial.model.contact_sheet.class%</argument>
             <tag name="form.type"/>
         </service>
+        <service id="Miky\Bundle\CommercialBundle\Form\Type\Admin\CommercialActionAdminType">
+            <argument>%miky_commercial.model.commercial_action.class%</argument>
+            <tag name="form.type"/>
+        </service>
+        <service id="Miky\Bundle\CommercialBundle\Form\Type\Admin\CommercialActionWorkerAdminType">
+            <argument>%miky_commercial.model.commercial_action_worker.class%</argument>
+            <tag name="form.type"/>
+        </service>
+        <service id="Miky\Bundle\CommercialBundle\Form\Type\Admin\CommercialActionContactAdminType">
+            <argument>%miky_commercial.model.commercial_action_contact.class%</argument>
+            <tag name="form.type"/>
+        </service>
         <service class="Miky\Bundle\CommercialBundle\Form\Type\Admin\QuotationAdminType">
             <argument>%miky_commercial.model.quotation.class%</argument>
             <tag name="form.type"/>

@@ -7,8 +7,26 @@ miky_commercial:
     company_sheet: Fiche entreprise
     contact_sheet.new: Créer une fiche contact
     contact_sheet.edit: Modifier la fiche contact
+    company_sheet.new: Créer une fiche entreprise
+    company_number: Siret
+    company_sheet.edit: Modifier la fiche entreprise
     contact_sheets.manage: Gérer les fiches contact
     company_sheets.manage: Gérer les fiches entreprise
     unit_price: Prix unitaire
     costs: Frais
     income: Recettes
+    workers: Executants
+    contacts: Contacts
+    report: Compte rendu
+    commercial_actions: Actions commercial
+    dunning_date: Date de relance
+    action_date: Effectué le
+    priority: Priorité
+    priority_low: Basse
+    priority_normal: Normal
+    priority_high: Haute
+    priority_urgent: Urgente
+    commercial_action.new: Créer une action commerciale
+    commercial_action.edit: Modifier l'action commerciale
+    commercial_actions.manage: Gérer les actions commerciales
+

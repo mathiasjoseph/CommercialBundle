@@ -9,7 +9,8 @@ miky_resource:
             classes:
                 model: %miky_commercial.model.commercial_action.class%
             contexts:
-                admin: ~
+                admin:
+                    controller: Miky\Bundle\CommercialBundle\Controller\Admin\CommercialActionAdminController
         miky_commercial.company_sheet:
             classes:
                 model: %miky_commercial.model.company_sheet.class%
@@ -59,6 +60,83 @@ miky_grid:
                 enabled:
                     type: boolean
                     label: miky.ui.enabled
+            batch_actions:
+                delete:
+                    label: miky_core.delete
+            actions:
+                main:
+                    create:
+                        type: create
+                item:
+                    update:
+                        type: update
+                    delete:
+                        type: delete
+        miky_commercial.admin.company_sheet:
+            resource: miky_commercial.company_sheet
+#            sorting:
+#                confirmedAt:
+#                    path: confirmedAt
+#                    direction: asc
+            fields:
+                email:
+                    type: string
+                    label: miky_core.email
+                username:
+                    type: string
+                    label: miky.ui.username
+                enabled:
+                    type: twig
+                    label: miky.ui.enabled
+                    options:
+                        template: MikyAdminBundle:Grid/Field:enabled.html.twig
+            filters:
+                email:
+                    type: string
+                    label: miky.ui.email
+                username:
+                    type: string
+                    label: miky.ui.username
+                enabled:
+                    type: boolean
+                    label: miky.ui.enabled
+            batch_actions:
+                delete:
+                    label: miky_core.delete
+            actions:
+                main:
+                    create:
+                        type: create
+                item:
+                    update:
+                        type: update
+                    delete:
+                        type: delete
+        miky_commercial.admin.commercial_action:
+            resource: miky_commercial.commercial_action
+#            sorting:
+#                confirmedAt:
+#                    path: confirmedAt
+#                    direction: asc
+            fields:
+                title:
+                    type: string
+                    label: miky_core.title
+                enabled:
+                    type: twig
+                    label: miky.ui.enabled
+                    options:
+                        template: MikyAdminBundle:Grid/Field:enabled.html.twig
+            filters:
+                title:
+                    type: string
+                    label: miky_core.title
+                enabled:
+                    type: boolean
+                    label: miky.ui.enabled
+            batch_actions:
+                delete:
+                    label: miky_core.delete
             actions:
                 main:
                     create:
