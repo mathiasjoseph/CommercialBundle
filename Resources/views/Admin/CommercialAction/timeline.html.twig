@@ -1,7 +1,7 @@
 {% extends "@MikyAdmin/layout.html.twig" %}
 {% block content %}
 
-		<div class="timeline-container top-circle">
+		<div ng-controller="CommercialActionTimeline" class="timeline-container top-circle">
 			<section class="timeline">
 				<div class="timeline-block">
 					<div class="timeline-point success">
@@ -84,10 +84,36 @@
 					</div>
 
 				</div>
-
 			</section>
-
+			{% verbatim %}
+			<h1 ng-repeat="x in records">{{x}}</h1>
+			{% endverbatim %}
 		</div>
 
+
+{% endblock %}
+
+{% block javascripts %}
+
+{{ parent() }}
+	<script>
+        var app = angular.module("AdminApp", []);
+        app.controller("CommercialActionTimeline", function($scope) {
+            $scope.records = [
+                "Alfreds Futterkiste",
+                "Berglunds snabbköp",
+                "Centro comercial Moctezuma",
+                "Ernst Handel",
+            ]
+            $http({
+                method : "POST",
+                url : "employees",
+                data : angular.toJson($scope.form),
+                headers : {
+                    'Content-Type' : 'application/json'
+                }
+            }).then( _success, _error );
+        });
+	</script>
 
 {% endblock %}
