@@ -13,8 +13,6 @@ use Doctrine\Common\EventSubscriber;
 use Doctrine\Common\Persistence\Event\LoadClassMetadataEventArgs;
 use Doctrine\ORM\Events;
 use Doctrine\ORM\Mapping\Builder\ClassMetadataBuilder;
-use Gaia\Bundle\FormationBundle\Model\FormationParticipant;
-use Gaia\Bundle\FormationBundle\Model\FormationTrainer;
 use Miky\Bundle\CommercialBundle\Model\CommercialAction;
 
 

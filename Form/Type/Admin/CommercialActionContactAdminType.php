@@ -10,7 +10,6 @@ namespace Miky\Bundle\CommercialBundle\Form\Type\Admin;
 
 
 use Miky\Bundle\CommercialBundle\Form\Type\ContactSheetEntityType;
-use Miky\Bundle\CommercialBundle\Form\Type\ContactSheetFormType;
 use Miky\Bundle\CommercialBundle\Model\CommercialActionContact;
 use Miky\Bundle\UserBundle\Form\Type\EmployeeEntityType;
 use Miky\Bundle\UserBundle\Form\Type\UserEntityType;

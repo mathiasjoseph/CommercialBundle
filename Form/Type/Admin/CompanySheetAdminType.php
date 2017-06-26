@@ -9,7 +9,6 @@
 namespace Miky\Bundle\CommercialBundle\Form\Type\Admin;
 
 
-use Miky\Bundle\CommercialBundle\Form\Type\ContactSheetFormType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;

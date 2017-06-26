@@ -13,9 +13,7 @@ use Doctrine\Common\EventSubscriber;
 use Doctrine\Common\Persistence\Event\LoadClassMetadataEventArgs;
 use Doctrine\ORM\Events;
 use Doctrine\ORM\Mapping\Builder\ClassMetadataBuilder;
-use Gaia\Bundle\FormationBundle\Model\FormationParticipant;
 use Miky\Bundle\CommercialBundle\Model\CommercialActionContact;
-use Miky\Bundle\CommercialBundle\Model\CommercialActionWorker;
 
 
 class CommercialActionContactSubscriber implements EventSubscriber
