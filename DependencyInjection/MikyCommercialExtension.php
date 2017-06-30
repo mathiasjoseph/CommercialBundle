@@ -20,7 +20,8 @@ class MikyCommercialExtension extends AbstractCoreExtension implements PrependEx
      */
     public function load(array $configs, ContainerBuilder $container)
     {
-        $configuration = new Configuration();
+        $configuration = new Configuration($container->getParameter("miky_payment.use_default_entities"));
+
         $config = $this->processConfiguration($configuration, $configs);
 
         $loader = new Loader\XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
