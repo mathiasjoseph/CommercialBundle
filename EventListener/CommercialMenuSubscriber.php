@@ -47,6 +47,11 @@ class CommercialMenuSubscriber implements EventSubscriberInterface
             ->setLabel('miky_commercial.commercial_actions')
             ->setLabelAttribute('icon', 'users')
         ;
+        $commercialSubMenu
+            ->addChild('quotation_list', array("route" => "miky_commercial_admin_quotation_index" ))
+            ->setLabel('miky_commercial.quotations')
+            ->setLabelAttribute('icon', 'users')
+        ;
 
     }
 }

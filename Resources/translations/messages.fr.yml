@@ -15,6 +15,11 @@ miky_commercial:
     unit_price: Prix unitaire
     costs: Frais
     income: Recettes
+    quotation: Devis
+    quotations: Devis
+    quotations.manage: Gérer les devis
+    quotation.edit: Modifier le devis
+    quotation.new: Créer un devis
     workers: Executants
     contacts: Contacts
     report: Compte rendu

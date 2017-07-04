@@ -50,6 +50,23 @@ miky_commercial.admin.commercial_action:
                 icon: cube
     type: miky.resource_admin
 
+miky_commercial.admin.quotation:
+    resource: |
+        alias: miky_commercial.quotation
+        section: admin
+        context: admin
+        templates: MikyAdminBundle:Crud
+        redirect: update
+        grid: miky_commercial.admin.quotation
+        form: Miky\Bundle\CommercialBundle\Form\Type\Admin\QuotationAdminType
+        permission: true
+        vars:
+            all:
+                subheader: miky_commercial.quotations.manage
+            index:
+                icon: cube
+    type: miky.resource_admin
+
 
 
 miky_commercial.admin.commercial_action_timeline:

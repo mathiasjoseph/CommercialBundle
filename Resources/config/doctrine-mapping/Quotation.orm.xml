@@ -6,8 +6,8 @@
 
     <mapped-superclass name="Miky\Bundle\CommercialBundle\Model\Quotation">
 
-
-
+    <field name="reference" type="string" length="180"/>
+        <field name="name" type="string" length="180"/>
     </mapped-superclass>
 
 </doctrine-mapping>

@@ -10,12 +10,12 @@ namespace Miky\Bundle\CommercialBundle\Form\Type\Admin;
 
 
 use Miky\Bundle\ResourceBundle\Form\Type\AbstractResourceType;
+use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 
-class CompanySheetAdminType extends AbstractResourceType
+class QuotationItemAdminType extends AbstractResourceType
 {
-
 
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
@@ -23,19 +23,18 @@ class CompanySheetAdminType extends AbstractResourceType
             ->add('name', TextType::class, array(
                 "label" => "miky_core.name"
             ))
-            ->add('email', TextType::class, array(
-                "label" => "miky_core.email"
+            ->add('description', TextareaType::class, array(
+                "label" => "miky_core.description"
             ))
-            ->add('phone', TextType::class, array(
-                "label" => "miky_core.phone"
+            ->add('price', TextType::class, array(
+                "label" => "miky_core.price"
             ))
-            ->add('companyNumber', TextType::class, array(
-                "label" => "miky_commercial.company_number"
+            ->add('quantity', TextType::class, array(
+                "label" => "miky_core.quantity"
             ))
-
-
-        ;
+            ;
     }
+
 
 
 }

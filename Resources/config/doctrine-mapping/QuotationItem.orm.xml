@@ -6,6 +6,10 @@
 
     <mapped-superclass name="Miky\Bundle\CommercialBundle\Model\QuotationItem">
 
+        <field name="name" type="string" length="180"/>
+        <field name="description" type="text" nullable="true"/>
+        <field name="price" type="float" />
+        <field name="quantity" type="integer"/>
 
 
     </mapped-superclass>

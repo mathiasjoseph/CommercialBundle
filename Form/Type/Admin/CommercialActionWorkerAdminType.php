@@ -11,21 +11,15 @@ namespace Miky\Bundle\CommercialBundle\Form\Type\Admin;
 
 use Miky\Bundle\CommercialBundle\Form\Type\ContactSheetEntityType;
 use Miky\Bundle\CommercialBundle\Model\CommercialActionWorker;
+use Miky\Bundle\ResourceBundle\Form\Type\AbstractResourceType;
 use Miky\Bundle\UserBundle\Form\Type\EmployeeEntityType;
 use Miky\Bundle\UserBundle\Form\Type\UserEntityType;
-use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\FormBuilderInterface;
-use Symfony\Component\OptionsResolver\OptionsResolver;
 
-class CommercialActionWorkerAdminType extends AbstractType
+class CommercialActionWorkerAdminType extends AbstractResourceType
 {
-    protected $class;
 
-    public function __construct($class)
-    {
-        $this->class = $class;
-    }
 
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
@@ -69,11 +63,5 @@ class CommercialActionWorkerAdminType extends AbstractType
         ;
     }
 
-    public function configureOptions(OptionsResolver $resolver)
-    {
-        $resolver->setDefaults(array(
-            'data_class' => $this->class,
-        ));
-    }
 
 }

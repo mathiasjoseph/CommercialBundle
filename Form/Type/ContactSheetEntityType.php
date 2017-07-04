@@ -19,21 +19,23 @@ class ContactSheetEntityType extends AbstractType
     /**
      * @var string
      */
-    protected $class;
+    protected $contactSheetClass;
 
     /**
      * ContactSheetEntityType constructor.
-     * @param string $class
+     * @param string $contactSheetClass
      */
-    public function __construct($class)
+    public function __construct($contactSheetClass)
     {
-        $this->class = $class;
+        $this->contactSheetClass = $contactSheetClass;
     }
+
 
     public function configureOptions(OptionsResolver $resolver)
     {
+
         $resolver->setDefaults(array(
-            'class' => $this->class,
+            "class" => $this->contactSheetClass,
             'choice_label' => function (ContactSheet $contactSheet) {
                 if (!empty($contactSheet->getFirstname()) && !empty($contactSheet->getLastname())){
                     return $contactSheet->getFirstname(). " " . $contactSheet->getLastname();

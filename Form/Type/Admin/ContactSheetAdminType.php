@@ -9,12 +9,11 @@
 namespace Miky\Bundle\CommercialBundle\Form\Type\Admin;
 
 
-use Miky\Bundle\CommercialBundle\Form\Type\ContactSheetFormType;
 
-class ContactSheetAdminType extends ContactSheetFormType
+
+use Miky\Bundle\ResourceBundle\Form\Type\AbstractResourceType;
+
+class ContactSheetAdminType extends AbstractResourceType
 {
-    public function __construct($class)
-    {
-       parent::__construct($class);
-    }
+
 }

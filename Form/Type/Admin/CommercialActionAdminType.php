@@ -11,22 +11,16 @@ namespace Miky\Bundle\CommercialBundle\Form\Type\Admin;
 
 use Miky\Bundle\CommercialBundle\Model\CommercialAction;
 use Miky\Bundle\CoreBundle\Form\Type\DateTimeType;
-use Symfony\Component\Form\AbstractType;
+use Miky\Bundle\ResourceBundle\Form\Type\AbstractResourceType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\CollectionType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
-use Symfony\Component\OptionsResolver\OptionsResolver;
 
-class CommercialActionAdminType extends AbstractType
+class CommercialActionAdminType extends AbstractResourceType
 {
-    protected $class;
 
-    public function __construct($class)
-    {
-        $this->class = $class;
-    }
 
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
@@ -71,11 +65,5 @@ class CommercialActionAdminType extends AbstractType
         ;
     }
 
-    public function configureOptions(OptionsResolver $resolver)
-    {
-        $resolver->setDefaults(array(
-            'data_class' => $this->class,
-        ));
-    }
 
 }

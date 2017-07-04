@@ -16,6 +16,7 @@
   "require" : {
     "mikycorp/corebundle": "~1.0",
     "mikycorp/userbundle": "~1.0",
+    "mikycorp/invoicebundle": "~1.0",
     "mikycorp/locationbundle": "~1.0",
     "mikycorp/commercial": "~1.0"
   },
