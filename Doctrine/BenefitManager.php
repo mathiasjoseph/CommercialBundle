@@ -9,9 +9,9 @@
 namespace Miky\Bundle\CommercialBundle\Doctrine;
 
 
-use Miky\Bundle\CoreBundle\Doctrine\AbstractObjectManager;
+use Miky\Bundle\CoreBundle\Doctrine\BaseEntityManager;
 
-class BenefitManager extends AbstractObjectManager
+class BenefitManager extends BaseEntityManager
 {
 
 }
