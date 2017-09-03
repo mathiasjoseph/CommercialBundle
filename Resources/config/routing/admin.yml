@@ -77,5 +77,5 @@ miky_commercial.admin.commercial_action_timeline:
         _seestock:
             alias: miky_commercial.commercial_action
             section: admin
-            template: SeestockAdminBundle:Crud:index.html.twig
+            template: MikyAdminBundle:Crud:index.html.twig
             type: miky.resource
