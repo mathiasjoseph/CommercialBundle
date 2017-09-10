@@ -11,7 +11,6 @@ namespace Miky\Bundle\CommercialBundle\Form\Type;
 
 use Miky\Bundle\UserBundle\Form\Type\EmployeeEntityType;
 use Miky\Bundle\UserBundle\Form\Type\UserEntityType;
-use Miky\Bundle\UserBundle\Form\Type\UserPersonType;
 use Miky\Component\Commercial\Model\Traits\CommercialPersonInterface;
 use Miky\Component\User\Model\Traits\UserPersonInterface;
 use Symfony\Component\Form\AbstractType;
