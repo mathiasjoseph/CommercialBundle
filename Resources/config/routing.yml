@@ -1,3 +1,0 @@
-miky_commercial_admin:
-    resource: "@MikyCommercialBundle/Resources/config/routing/admin.yml"
-    prefix : /
