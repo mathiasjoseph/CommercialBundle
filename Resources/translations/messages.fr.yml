@@ -9,6 +9,8 @@ miky_commercial:
     contact_sheet.edit: Modifier la fiche contact
     company_sheet.new: Créer une fiche entreprise
     company_number: Siret
+    company_name: Nom de l'entreprise
+    company_description: Description de l'entreprise
     company_sheet.edit: Modifier la fiche entreprise
     contact_sheets.manage: Gérer les fiches contact
     company_sheets.manage: Gérer les fiches entreprise
