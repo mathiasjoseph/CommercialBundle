@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="Miky\Bundle\CommercialBundle\Form\Type\ContactSheetEntityType">
+            <argument>%miky_commercial.model.contact_sheet.class%</argument>
+            <tag name="form.type"/>
+        </service>
+        <service class="Miky\Bundle\CommercialBundle\Form\Type\Admin\BenefitAdminType">
+            <argument>%miky_commercial.model.benefit.class%</argument>
+            <tag name="form.type"/>
+        </service>
+        <service class="Miky\Bundle\CommercialBundle\Form\Type\Admin\CommercialActionAdminType">
+            <argument>%miky_commercial.model.commercial_action.class%</argument>
+            <tag name="form.type"/>
+        </service>
+        <service class="Miky\Bundle\CommercialBundle\Form\Type\Admin\CompanySheetAdminType">
+            <argument>%miky_commercial.model.company_sheet.class%</argument>
+            <tag name="form.type"/>
+        </service>
+        <service class="Miky\Bundle\CommercialBundle\Form\Type\Admin\ContactSheetAdminType">
+            <argument>%miky_commercial.model.contact_sheet.class%</argument>
+            <tag name="form.type"/>
+        </service>
+        <service id="Miky\Bundle\CommercialBundle\Form\Type\Admin\CommercialActionAdminType">
+            <argument>%miky_commercial.model.commercial_action.class%</argument>
+            <tag name="form.type"/>
+        </service>
+        <service id="Miky\Bundle\CommercialBundle\Form\Type\Admin\CommercialActionWorkerAdminType">
+            <argument>%miky_commercial.model.commercial_action_worker.class%</argument>
+            <tag name="form.type"/>
+        </service>
+        <service id="Miky\Bundle\CommercialBundle\Form\Type\Admin\CommercialActionContactAdminType">
+            <argument>%miky_commercial.model.commercial_action_contact.class%</argument>
+            <tag name="form.type"/>
+        </service>
+        <service class="Miky\Bundle\CommercialBundle\Form\Type\Admin\QuotationAdminType">
+            <argument>%miky_commercial.model.quotation.class%</argument>
+            <tag name="form.type"/>
+        </service>
+        <service class="Miky\Bundle\CommercialBundle\Form\Type\Admin\QuotationItemAdminType">
+            <argument>%miky_commercial.model.quotation_item.class%</argument>
+            <tag name="form.type"/>
+        </service>
+    </services>
+
+</container>
