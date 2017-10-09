@@ -10,6 +10,7 @@ namespace Miky\Bundle\CommercialBundle\Form\Type\Admin;
 
 
 use Miky\Bundle\ResourceBundle\Form\Type\AbstractResourceType;
+use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 
@@ -23,7 +24,7 @@ class CompanySheetAdminType extends AbstractResourceType
             ->add('name', TextType::class, array(
                 "label" => "miky_core.name"
             ))
-            ->add('email', TextType::class, array(
+            ->add('email', EmailType::class, array(
                 "label" => "miky_core.email"
             ))
             ->add('phone', TextType::class, array(
